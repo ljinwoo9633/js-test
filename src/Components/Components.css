@@ -1,0 +1,14 @@
+.planetMenu
+{
+    position: absolute;
+    z-index: 1;
+    list-style: none;
+}
+
+.planetMenuBtn
+{
+    all: unset;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
