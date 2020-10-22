@@ -1,7 +1,8 @@
 import React from 'react';
-import { HomeContainer } from './Planets';
+import { HomeContainer } from './Components';
 
 let planets = [
+    'solar',
     'earth',
     'mars',
     'mercury',
@@ -31,7 +32,7 @@ class Home extends React.Component
         {
             this.setState(
                 {
-                    planet: 'earth'
+                    planet: 'solar'
                 }
             );
         }
@@ -126,12 +127,12 @@ class Home extends React.Component
             ?
             (<></>)
             :
-            (<HomeContainer
+            (<HomeContainer 
+                isMenuOpen={isMenuOpen}
                 isLoadingPlanet={isLoadingPlanet}
                 planet={planet}
-                isMenuOpen={isMenuOpen}
-                handleOnChangingIsMenuOpen={this.HandleOnChangingIsMenuOpen}
                 handleOnChangingPlanet={this.HandleOnChangingPlanet}
+                handleOnChangingIsMenuOpen={this.HandleOnChangingIsMenuOpen}
             />)
         )
     }
