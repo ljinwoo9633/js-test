@@ -1,5 +1,5 @@
 import React from 'react';
-import Music from '../Public/Music/music.mp4';
+import Music from '../Public/Music/audio.wav';
 
 import './Components.css';
 import { SceneContainer } from './Planets';
@@ -23,12 +23,12 @@ export let HomeContainer = ({
                 planet={planet}
                 isLoadingPlanet={isLoadingPlanet}
             />
-            <video
+            <audio
                 src={Music}
-                autoPlay="true"
+                autoPlay
                 loop="true"
             >
-            </video>
+            </audio>
         </>
     )
 }

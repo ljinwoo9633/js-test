@@ -1,3 +1,12 @@
+.audioContainer
+{
+    position: absolute;
+    z-index: 3;
+    background-color: red;
+    width: 5rem;
+    height: 5rem;
+}
+
 .planetMenu
 {
     position: absolute;
