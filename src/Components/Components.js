@@ -25,7 +25,8 @@ export let HomeContainer = ({
             />
             <video
                 src={Music}
-                autoPlay
+                autoPlay="true"
+                loop="true"
             >
             </video>
         </>
